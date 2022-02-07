@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class W2CircleScript : MonoBehaviour
 {
@@ -46,7 +47,7 @@ public class W2CircleScript : MonoBehaviour
    
         }
 
-        if (W2GameManager.score >= 29)
+        if (W2GameManager.score >= 30)
         {
             SceneManager.LoadScene("W2Win");
         }
