@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class YouWin : MonoBehaviour
+public class W2GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,10 +14,5 @@ public class YouWin : MonoBehaviour
     void Update()
     {
         
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        SceneManager.LoadScene("You Win!");
     }
 }

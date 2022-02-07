@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WASD : MonoBehaviour
+public class W1WASD : MonoBehaviour
 {
     //adding public to the line below makes this number visible in unity
     public float speed = 0.5f;
