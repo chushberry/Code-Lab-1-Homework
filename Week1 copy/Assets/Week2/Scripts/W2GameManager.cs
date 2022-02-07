@@ -14,8 +14,6 @@ public class W2GameManager : MonoBehaviour
     // by default, variables are private unless otherwise stated
     float startHealth;
 
-    private int userId = 2;
-
     private int highScore;
 
     //highScore and HighScore are different
@@ -34,6 +32,7 @@ public class W2GameManager : MonoBehaviour
             highScore = value;
         }
     }
+
     public static float circleSpeed = 0;
 
     //SINGLETON PATTERN STARTS HERE
@@ -82,16 +81,16 @@ public class W2GameManager : MonoBehaviour
         //when we use this line, the "value" implict variable from above
         //is 10
         HighScore = 10;
-        circleSpeed = -0.5f;
+        //circleSpeed = -0.5f;
         Debug.Log(highScore);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (W2GameManager.score >= 29)
         {
-            SceneManager.LoadScene("W2Start");
+            SceneManager.LoadScene("W2Win");
         }
     }
 }
