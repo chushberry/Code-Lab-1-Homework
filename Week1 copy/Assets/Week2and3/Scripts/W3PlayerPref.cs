@@ -42,12 +42,12 @@ public class W3PlayerPref : MonoBehaviour
     void Start()
     {
         //set a new playerpref called blahBlahBlah to 2
-        PlayerPrefs.SetInt("blahBlahBlah", 2);
+        //PlayerPrefs.SetInt("blahBlahBlah", 2);
         //read that playerpref
-        Debug.Log(PlayerPrefs.GetInt("blahBlahBlah", 5));
+        //Debug.Log(PlayerPrefs.GetInt("blahBlahBlah", 5));
 
         //read the playerpref anotherKeyGoesHere
-        Debug.Log(PlayerPrefs.GetInt("anotherKeyGoesHere"));
+        //Debug.Log(PlayerPrefs.GetInt("anotherKeyGoesHere"));
 
         //use the SoundVolume property to set the volume to 5
         // by default the volume is 5 when i start the game
@@ -58,7 +58,7 @@ public class W3PlayerPref : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyUp("R"))
+        if (Input.GetKeyUp(KeyCode.R))
 
         {
             // increases volume by 1
@@ -66,7 +66,7 @@ public class W3PlayerPref : MonoBehaviour
 
         }
 
-        if (Input.GetKeyUp("F"))
+        if (Input.GetKeyUp(KeyCode.F))
         {
             // decreases volume by 1
             SoundVolume -= 1;
