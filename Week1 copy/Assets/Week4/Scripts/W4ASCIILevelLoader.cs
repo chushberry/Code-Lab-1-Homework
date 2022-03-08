@@ -41,11 +41,11 @@ public class W4ASCIILevelLoader : MonoBehaviour
             if (c == 'X') //if the character is X
             {
                 Debug.Log("make a cube");
-                GameObject brick = Instantiate(Resources.Load("Block")) as GameObject; //create a cube from the resources folder
+                GameObject block = Instantiate(Resources.Load("Block")) as GameObject; //create a cube from the resources folder
                 //set the position of the new game object
-                brick.transform.position = new Vector3(
-                    x * brick.transform.localScale.x + xOffset,
-                    y * brick.transform.localScale.y + yOffset,
+                block.transform.position = new Vector3(
+                    x * block.transform.localScale.x + xOffset,
+                    y * block.transform.localScale.y + yOffset,
                     0
                     );
             }
@@ -61,15 +61,15 @@ public class W4ASCIILevelLoader : MonoBehaviour
             }
             else if (c == 'O') //if the character is O
             {
-                GameObject ball = Instantiate(Resources.Load("Ball")) as GameObject; //create a sphere from the resources folder
+                GameObject pill = Instantiate(Resources.Load("Pill")) as GameObject; //create a sphere from the resources folder
                 //set the position of the new game object
-                ball.transform.position = new Vector3(
-                    x * ball.transform.localScale.x + xOffset,
-                    y * ball.transform.localScale.y + yOffset,
+                pill.transform.position = new Vector3(
+                    x * pill.transform.localScale.x + xOffset,
+                    y * pill.transform.localScale.y + yOffset,
                     0
                     );
             }
-            Debug.Log(y);
+            //Debug.Log(y);
         }
         // }
     }
