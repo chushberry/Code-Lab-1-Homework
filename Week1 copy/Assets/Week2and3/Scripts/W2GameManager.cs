@@ -74,6 +74,7 @@ public class W2GameManager : MonoBehaviour
         }
     }
 
+    bool gameNotOver;
     // Start is called before the first frame update
     void Start()
     {
@@ -83,13 +84,19 @@ public class W2GameManager : MonoBehaviour
         HighScore = 10;
         //circleSpeed = -0.5f;
         Debug.Log(highScore);
+        // game is running
+        gameNotOver = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (W2GameManager.score >= 29)
+        // if the game is running and the score is more than or equal to 30
+        if (gameNotOver && score >= 30)
         {
+            //change the bool so the scene wont keep reloading
+            gameNotOver = true;
+            //change the scene
             SceneManager.LoadScene("W2Win");
         }
     }

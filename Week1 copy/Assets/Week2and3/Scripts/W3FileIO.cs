@@ -1,4 +1,4 @@
-/*
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -50,15 +50,15 @@ public class W3FileIO : MonoBehaviour
         // every time i see a delimiter, split it so i can use the split up compenents from the string
         string[] scoreSplit = content.Split(delimiterChars);
 
-        for (int i = 0; i < scoreSplit.Length; 1++)
+        for (int i = 0; i < scoreSplit.Length; i++)
         {
             // & checks for remainders - so in this case if the remainder is 0 after dividing by 2, then do this
             // & is called modulo
-            if(i&3 == 0)
+            if(i%3 == 0)
             {
                 Debug.Log("is a name");
             }
-            else if (i&2 == 0)
+            else if (i%2 == 0)
             {
                 Debug.Log("is a country");
             }
@@ -85,4 +85,3 @@ public class W3FileIO : MonoBehaviour
         //Debug.Log(content);
     }
 }
-*/
