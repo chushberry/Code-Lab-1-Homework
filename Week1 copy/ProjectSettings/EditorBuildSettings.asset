@@ -8,10 +8,16 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Week2and3/Scenes/W2Start.unity
     guid: 76f280922bb94439aadd394b38a9da4a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Week2and3/Scenes/W2Win.unity
     guid: 71059da5fb6064c1eaa1f10ad3f9dac4
+  - enabled: 1
+    path: Assets/MIDTERM/MID-MainGame.unity
+    guid: 602b243b441084e67b9a4d4deb723515
+  - enabled: 1
+    path: Assets/MIDTERM/W8YouWin.unity
+    guid: f9eeaa6ab595a44ddbb61f6683fca4d4
   m_configObjects: {}
