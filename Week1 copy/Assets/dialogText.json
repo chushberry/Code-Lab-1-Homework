@@ -1,0 +1,39 @@
+﻿{
+    "sceneOne": [
+        {
+            "index": 0,
+            "line": "Hello, madam!",
+            "goto": 1
+        },
+
+        {
+            "index": 1,
+            "line": "Hello, how are you m'dude?",
+            "choices": [ "I'm fine thanks", "Everything sucks and you suck." ],
+            "goto": [ 2, 3 ]
+        },
+
+        {
+            "index": 2,
+            "line": "Nice.",
+            "goto":  [4]
+        },
+
+        {
+            "index": 3,
+            "line": "Dayum bruh.",
+            "goto": [ 5 ]
+        }
+        ,
+        {
+            "index": 4,
+            "line": "So - some nice weather we got today",
+ 
+        }
+        ,
+        {
+            "index": 5,
+            "line": "You're a big stinker"
+        }
+  ]
+}

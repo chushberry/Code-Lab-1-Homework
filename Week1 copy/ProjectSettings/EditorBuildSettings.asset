@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MIDTERM/W8YouWin.unity
     guid: f9eeaa6ab595a44ddbb61f6683fca4d4
+  - enabled: 1
+    path: Assets/FINAL/FWin.unity
+    guid: 5803b94c4571644cdb18cf6cc09d17a1
+  - enabled: 1
+    path: Assets/FINAL/FINAL.unity
+    guid: 760095bee0c894c2f91099a0c3e9f2f7
   m_configObjects: {}

@@ -1,0 +1,15 @@
+﻿{
+  "sceneOne": [
+    {
+      "index": 0,
+      "line": "Hello, madam!",
+      "goto": 1
+    },
+
+    {
+      "index": 1,
+      "line": "Hello, how are you m'dude?",
+      "goto":  2
+    }
+  ]
+}
